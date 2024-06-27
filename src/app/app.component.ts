@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ZoomImageWheelService } from '@zoom-image/angular';
+import { ZoomImageHoverService, ZoomImageWheelService } from '@zoom-image/angular';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +9,5 @@ import { ZoomImageWheelService } from '@zoom-image/angular';
 export class AppComponent {
   title = 'zoom-image-bug';
 
-  constructor (private zoomImageWheelService: ZoomImageWheelService) {}
+  constructor (private zoomImageWheelService: ZoomImageWheelService, private zoomImageHoverService: ZoomImageHoverService) {}
 }
